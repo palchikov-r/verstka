@@ -4,56 +4,60 @@
     <meta charset="utf-8">
     <title>Верстуны</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   </head>
 
-  <body>
+  <body link="#aaabaf">
     <header>
-    <div class='logo'><img src="img/logo.png" width="30px" height="30px">  Верстуны</div>
+    <div class='logo'>
+      <img src="img/logo.png" width="30px" height="30px">  Верстуны
+    </div>
   </header>
   <main>
 
-  <div class='center'>
-<p class='error'>
-  Error 404
-</p>
-<h1>
-  Page is missing
-</h1>
-<p class='text1'>
-  Looks like the link to this page no longer exists. 
-  Please use the back button in your browser to return to the previous page
-  or alternatively return to the deals dashboard using the link below.
-</p>
-<div class='button'>
-  Back to deals dashboard
-</div>
+    <div class='center'>
+      <p class='error'>
+        Error 404
+      </p>
+      <h1>
+        Page is missing
+      </h1>
+      <p class='text1'>
+        Looks like the link to this page no longer exists. 
+        Please use the back button in your browser to return to the previous page
+        or alternatively return to the deals dashboard using the link below.
+      </p>
+      <div class='button'>
+        Back to deals dashboard
+      </div>
   </div>
   </main>
 
   <footer>
     <div class='footerContent'>
       <div class='link'>
-<div class='links'>
-  <div class='l1'>
-Help and support<img src="https://img.icons8.com/carbon-copy/100/000000/external-link.png" width="15px" height="15px">
-
-Terms and conditions<img src="https://img.icons8.com/carbon-copy/100/000000/external-link.png" width="15px" height="15px">
-
-Privacy notice<img src="https://img.icons8.com/carbon-copy/100/000000/external-link.png" width="15px" height="15px">
-</div>
-</div>
-</div>
-<div class='footerText'>
-    Свойство align-items устанавливает align-self для всех flex элементов как для группы.<br><br>
-    Это означает, что можно явно указать значение align-self для конкретного элемента.<br>
-    Свойство align-self может принимать все те же значения, что и свойство align-items, а так же значение auto, которое сбросит значение, установленное в flex контейнере.<br><br>
-    В следующем примере, у flex контейнера установлено align-items: flex-start, означающее, что все элементы будут выравнены по началу перекрёстной оси. <br><br>
-    У первого элемента с помощью first-child селектора установлено align-items: stretch; у следующего элемента с классом selected установлено align-self: center. Можно изменять значение align-items на контейнере или align-self на элементе для изучения их работы.8н
-</div>
-</div>
-
-
+        <div class='links'>
+          <ul class='l1'>
+            <li><a href="url">Help and support <i class="fa fa-external-link"></i></a></li>
+            <li><a href="url">Terms and conditions <i class="fa fa-external-link"></i></a></li>
+            <li><a href="url">Privacy notice <i class="fa fa-external-link"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class='footerText'>
+        <li>
+          Свойство align-items устанавливает align-self для всех flex элементов как для группы.<br><br>
+          Это означает, что можно явно указать значение align-self для конкретного элемента.<br>
+          Свойство align-self может принимать все те же значения, что и свойство align-items, а так же значение auto, которое сбросит значение, установленное в flex контейнере.<br><br>
+          В следующем примере, у flex контейнера установлено align-items: flex-start, означающее, что все элементы будут выравнены по началу перекрёстной оси. <br><br>
+          У первого элемента с помощью first-child селектора установлено align-items: stretch; у следующего элемента с классом selected установлено align-self: center. Можно изменять значение align-items на контейнере или align-self на элементе для изучения их работы.8н
+        </li>
+        <li class='hideInfo'>
+            <i class="fa fa-angle-up"></i> Hide info
+        </li>
+      </ul>
+    </div>
   </footer>
   </body>
 </html>
