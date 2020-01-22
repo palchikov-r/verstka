@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  line-height: 18px;
   color: #000000;
 }
 
@@ -83,11 +82,9 @@ footer{
   color:#aaabaf;
 }
 
-.link{
-  border-bottom:1px solid rgb(143, 143, 143);
-}
 
 .links{
+  border-bottom:1px solid rgb(143, 143, 143);
   padding-top: 40px;
   color:#aaabaf;
   display: block;
@@ -103,23 +100,25 @@ ul.l1 {
   margin-right: 15px;
  }
 
+ .footerText {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  color:#aaabaf;
+ }
+
  ul.footerText {
   margin: 0; 
   padding: 4px; 
  }
  ul.footerText li {
-  display: inline; 
-  margin-right: 15px;
+  display: block; 
+  min-width: 100px;
  }
-
-.hideInfo{
-  margin-left: 10%;
-}
 
 .footerText{
   padding-top: 15px;
   color:#aaabaf;
-  width: 1000px;
 }
 
 
