@@ -1,6 +1,21 @@
 
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000000;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+a { 
+  text-decoration: none; 
+}
+
 header{
   background: #45484e;
+  flex-grow: 0;
 }
 
 .logo{
@@ -13,16 +28,11 @@ header{
   line-height: 20px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  color: #000000;
+main{
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 30px;
 }
-
-a { 
-  text-decoration: none; 
- }
 
 p{
   font-size: 16px;
@@ -37,7 +47,7 @@ p{
   padding-bottom: 25px;
   display: flex;
   align-items: center;
-  width: 450px;
+  max-width: 50%;
 }
 
 h1{
@@ -47,8 +57,6 @@ h1{
 
 .center{
   margin-left: 25%;
-  height:400px;
-  
 }
 
 .button{
@@ -70,8 +78,9 @@ a.change-color{
 }
 
 footer{
+  flex-grow: 0;
   background: #45484e;
-  height:337px;
+  padding-bottom: 50px;
 }
 
 .footerContent{
@@ -103,7 +112,6 @@ ul.l1 {
  .footerText {
   display: flex;
   flex-wrap: nowrap;
-  align-items: stretch;
   color:#aaabaf;
  }
 
@@ -120,5 +128,4 @@ ul.l1 {
   padding-top: 15px;
   color:#aaabaf;
 }
-
 
