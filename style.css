@@ -9,6 +9,8 @@ body {
   min-height: 100vh;
 }
 
+
+
 a { 
   text-decoration: none; 
 }
@@ -28,6 +30,10 @@ header{
   line-height: 20px;
 }
 
+.logo span{
+  padding-left: 20px;
+}
+
 main{
   display: flex;
   flex-grow: 1;
@@ -45,8 +51,8 @@ p{
 
 .text1{
   padding-bottom: 25px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   max-width: 50%;
 }
 
@@ -56,30 +62,32 @@ h1{
 }
 
 .center{
-  margin-left: 25%;
+  /* margin-left: 25%;  */
+  margin: auto;
+  width: 60%;
 }
 
 .button{
+  display: block;
   font-size:15px;
+  line-height: 35px;
+  text-align: center;
   background: red;
+  color: black;
   border:2px solid rgb(187, 0, 0);
-  height:35px;
+  height: 35px;
+  width: 200px;
   border-radius: 8px;
 }
 .button:hover {
   background: #45484e; 
-} 
-a.change-color:hover{
   color: red;
-}
-
-a.change-color{
- color: black;
-}
+} 
 
 footer{
   flex-grow: 0;
   background: #45484e;
+  height: 300px;
   padding-bottom: 50px;
 }
 
@@ -100,32 +108,64 @@ footer{
   padding-bottom: 15px;
 }
 
-ul.l1 {
+.l1 {
   margin: 0; 
   padding: 4px; 
+  display: flex;
  }
- ul.l1 li {
+.l1 li {
   display: inline; 
   margin-right: 15px;
  }
+ .l1 li a {
+  display: flex;
+  align-items: center;
+}
 
  .footerText {
   display: flex;
   flex-wrap: nowrap;
   color:#aaabaf;
  }
-
- ul.footerText {
-  margin: 0; 
-  padding: 4px; 
- }
- ul.footerText li {
-  display: block; 
-  min-width: 100px;
+ .fa-external-link{
+  padding-left: 5px;
  }
 
 .footerText{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   padding-top: 15px;
   color:#aaabaf;
+  margin: 0; 
+  padding: 4px; 
 }
 
+#hide i{
+  padding-right: 5px;
+}
+
+.footerText div:first-child{
+  width: 90%;
+    
+}
+
+.visible{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.footerText p {
+  color:#aaabaf;
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+  text-align: right;
+}
+
+.footerText .hidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 1s linear;
+}

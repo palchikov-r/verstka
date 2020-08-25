@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Верстуны</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-  </head>
 
-  <body>
-    <header>
-    <div class='logo'>
-      <img src="img/logo.png" width="40px" height="40px">  Верстуны
+<head>
+  <meta charset="utf-8">
+  <title>Верстуны</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+  <header>
+    <div class='logo' id="huy">
+      <img src="img/logo.png" width="40px" height="40px"> <span>Верстуны</span>
     </div>
   </header>
   <main>
-
     <div class='center'>
       <p class='error'>
         Error 404
@@ -24,39 +24,44 @@
         Page is missing
       </h1>
       <p class='text1'>
-        Looks like the link to this page no longer exists. 
+        Looks like the link to this page no longer exists.
         Please use the back button in your browser to return to the previous page
         or alternatively return to the deals dashboard using the link below.
       </p>
-      
-      <button type="button" class='button' blank>
-        <a href="url" class='change-color'>Back to deals dashboard</a>
-      </button>
-  </div>
+
+      <a href="url" class='button'>Back to deals dashboard</a>
+
+    </div>
   </main>
 
   <footer>
     <div class='footerContent'>
-        <div class='links'>
-          <ul class='l1'>
-            <li><a href="url">Help and support <i class="fa fa-external-link"></i></a></li>
-            <li><a href="url">Terms and conditions <i class="fa fa-external-link"></i></a></li>
-            <li><a href="url">Privacy notice <i class="fa fa-external-link"></i></a></li>
-          </ul>
-        </div>
-      <ul class='footerText'>
-        <li>
+      <div class='links'>
+        <ul class='l1'>
+          <li><a href="url">Help and support <i class="fa fa-external-link"></i></a></li>
+          <li><a href="url">Terms and conditions <i class="fa fa-external-link"></i></a></li>
+          <li><a href="url">Privacy notice <i class="fa fa-external-link"></i></a></li>
+        </ul>
+      </div>
+      <div class='footerText'>
+        <div class='visible'>
           Свойство align-items устанавливает align-self для всех flex элементов как для группы.<br><br>
           Это означает, что можно явно указать значение align-self для конкретного элемента.<br>
-          Свойство align-self может принимать все те же значения, что и свойство align-items, а так же значение auto, которое сбросит значение, установленное в flex контейнере.<br><br>
-          В следующем примере, у flex контейнера установлено align-items: flex-start, означающее, что все элементы будут выравнены по началу перекрёстной оси. <br><br>
-          У первого элемента с помощью first-child селектора установлено align-items: stretch; у следующего элемента с классом selected установлено align-self: center. Можно изменять значение align-items на контейнере или align-self на элементе для изучения их работы.8н
-        </li>
-        <li>
-            <i class="fa fa-angle-up"></i> Hide info
-        </li>
-      </ul>
+          Свойство align-self может принимать все те же значения, что и свойство align-items, а так же значение auto,
+          которое сбросит значение, установленное в flex контейнере.<br><br>
+          В следующем примере, у flex контейнера установлено align-items: flex-start, означающее, что все элементы будут
+          выравнены по началу перекрёстной оси. <br><br>
+          У первого элемента с помощью first-child селектора установлено align-items: stretch; у следующего элемента с
+          классом selected установлено align-self: center. Можно изменять значение align-items на контейнере или
+          align-self на элементе для изучения их работы.8н
+        </div>
+        <div>
+          <p id='hide'><i class="fa fa-angle-up"></i>Hide info</p>
+        </div>
+      </div>
     </div>
   </footer>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>
